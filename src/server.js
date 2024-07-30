@@ -22,7 +22,8 @@ const send = require('gmail-send')({
 });
 
 // Have Node serve the files for our built React app
-//app.use(express.static(path.resolve(__dirname, '../../build')));
+app.use(express.static(path.resolve(__dirname, '../../build')));
+
 
 app.post("/api", async (request, response) => {
     //response.writeHead(200, "OK", {'Content-Type': 'text/plain'});
@@ -41,10 +42,12 @@ app.post("/api", async (request, response) => {
 });
 
 // All other GET requests not handled before will return our React app
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../../build', 'index.html'));
- });
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, '../../build', 'index.html'));
+//  });
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
+
+// module.exports = app;
