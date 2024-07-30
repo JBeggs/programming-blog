@@ -102,7 +102,7 @@ jQuery(document).ready(function($) {
 
       $.ajax({
         type: "POST",
-        url: "https://e30e-165-49-68-175.ngrok-free.app/api/contact",
+        url: "https://e30e-165-49-68-175.ngrok-free.app/api/contact/",
         data: JSON.stringify(contact_json),
         contentType: "application/json",
         success: function(msg) {
