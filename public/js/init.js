@@ -130,7 +130,10 @@ jQuery(document).ready(function($) {
               phone_number_valid = false
             }
           }
-          
+          alert(email_valid);
+          alert(name_valid);
+          alert(email_valid);
+          alert(error_message);
           if (email_valid && name_valid && email_valid) {
             console.log("Valid");
             $("#image-loader").fadeOut();
