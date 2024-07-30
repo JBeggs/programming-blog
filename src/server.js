@@ -22,7 +22,7 @@ const send = require('gmail-send')({
 });
 
 // Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, '../../build')));
+//app.use(express.static(path.resolve(__dirname, '../../build')));
 
 app.post("/api", async (request, response) => {
     //response.writeHead(200, "OK", {'Content-Type': 'text/plain'});
