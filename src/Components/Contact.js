@@ -34,7 +34,7 @@ class Contact extends Component {
         <div className="row">
           {/* <Slide left duration={1000}> */}
             <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
+              <form action="" onSubmit="" method="post" id="contactForm" name="contactForm">
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -108,7 +108,7 @@ class Contact extends Component {
                   </div>
 
                   <div>
-                    <button className="submit">Submit</button>
+                    <button type="submit" className="submit">Submit</button>
                     <span id="image-loader">
                       <img alt="" src="images/loader.gif" id="loader" />
                     </span>

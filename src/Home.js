@@ -6,8 +6,13 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Posts from "./Components/Post/Posts";
 import Contact from "./Components/Contact";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
 
 class App extends Component {
+
+
+
   constructor(props) {
     super(props);
     this.state = {
@@ -45,6 +50,8 @@ class App extends Component {
         <div className="flex flex-col min-h-screen">
           <Posts />
         </div>
+        <About data={this.state.resumeData.main} />
+        <Resume data={this.state.resumeData.resume} />
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
       </div>

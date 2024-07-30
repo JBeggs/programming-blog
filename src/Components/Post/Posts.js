@@ -14,7 +14,7 @@ const Posts = () => {
 
 
 return (
-	<div id="posts">
+	<section id="posts">
         
         <Grid container spacing={12}>
         <Grid xs={12} md={12}>
@@ -53,7 +53,7 @@ return (
             ))}
         </Grid>
             
-	</div>
+	</section>
     );
 };
 

@@ -24,13 +24,15 @@ jQuery(document).ready(function($) {
 
     var sections = $("section");
     var navigation_links = $("#nav-wrap a");
-
+    console.log(sections)
     sections.waypoint({
       handler: function(event, direction) {
         var active_section;
 
         active_section = $(this);
         if (direction === "up") active_section = active_section.prev();
+
+        console.log(active_section.attr("id"));
 
         var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
 
@@ -74,7 +76,8 @@ jQuery(document).ready(function($) {
       randomize: false
     });
 
-    $("form#contactForm button.submit").click(function() {
+    $("form#contactForm button.submit").click(function(e) {
+
       $("#image-loader").fadeIn();
 
       var contactName = $("#contactForm #contactName").val();

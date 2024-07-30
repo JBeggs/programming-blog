@@ -43,9 +43,6 @@ class Header extends Component {
     function _handleClick(menuItem) { 
       this.setState({ active: menuItem });
     }
-  
-    const page_list = window.location.href.split("/")
-    const page = page_list[page_list.length - 1];
 
     return (
       <header id="home">
@@ -59,22 +56,36 @@ class Header extends Component {
             Hide navigation
           </a>
 
-          <ul id="nav">
-            <li className={page === "" ? "current" : ""}> 
-              <Link to="/" onClick={_handleClick.bind(this, '')}>
-                      Home
-              </Link>
+          <ul id="nav" className="nav">
+            <li className="current">
+              <a className="smoothscroll" href="#home">
+                Home
+              </a>
             </li>
-            <li className={page === "about" ? "current" : ""}>
-              <Link to="/about" onClick={_handleClick.bind(this, 'about')}>
-                  About
-                </Link>
+            <li>
+              <a className="smoothscroll" href="#posts">
+                Tutoring
+              </a>
             </li>
-            {/* <li>
+            <li>
+              <a className="smoothscroll" href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a className="smoothscroll" href="#resume">
+                Resume
+              </a>
+            </li>
+
+
+
+            <li>
               <a className="smoothscroll" href="#contact">
                 Contact
               </a>
-            </li> */}
+            </li>
           </ul>
         </nav>
 
