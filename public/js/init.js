@@ -100,15 +100,6 @@ jQuery(document).ready(function($) {
         "message": "Subject " + contactSubject + " Message" + contactMessage,
       }
 
-
-
-
-      test = {
-        "email": [
-          "Enter a valid email address."
-        ]
-      }
-
       $.ajax({
         type: "POST",
         url: "https://e30e-165-49-68-175.ngrok-free.app/api/contact/",
@@ -116,9 +107,31 @@ jQuery(document).ready(function($) {
         contentType: "application/json",
         success: function(msg) {
 
-          var message = JSON.stringify(msg);
+          var error_message = "Name, Email and Phone_number cannot be blank and please make sure the email is valid"
 
-          if (!msg.email == "Enter a valid email address.") {
+          var email_valid = true;
+          if(msg["email"]){
+            if(msg.email == "Enter a valid email address." || msg.email == "This field may not be blank."){
+              email_valid = false
+              error_message += ""
+            }
+          }
+
+          var name_valid = true;
+          if(msg["name"]){
+            if(msg.name == "This field may not be blank."){
+              name_valid = false
+            }
+          }
+
+          var phone_number_valid = true;
+          if(msg["phone_number"]){
+            if(msg.phone_number == "This field may not be blank."){
+              phone_number_valid = false
+            }
+          }
+
+          if (email_valid && name_valid && email_valid) {
             $("#image-loader").fadeOut();
             $("#message-warning").hide();
             $("#contactForm").fadeOut();
@@ -127,7 +140,7 @@ jQuery(document).ready(function($) {
           // There was an error
           else {
             $("#image-loader").fadeOut();
-            $("#message-warning").html(msg.email);
+            $("#message-warning").html(error_message);
             $("#message-warning").fadeIn();
           }
         }

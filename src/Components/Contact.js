@@ -1,6 +1,5 @@
 import React, { Component, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
-import validator from "validator";
 
 
 class Contact extends Component {
@@ -63,8 +62,7 @@ class Contact extends Component {
                       name="contactEmail"
                       onChange={this.handleChange}
                     />
-                     {/*<br />
-                     <span
+                     {/* <span
                       style={{
                         fontWeight: "bold",
                         color: "red"
