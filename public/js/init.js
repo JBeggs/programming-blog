@@ -100,15 +100,25 @@ jQuery(document).ready(function($) {
         "message": "Subject " + contactSubject + " Message" + contactMessage,
       }
 
+
+
+
+      test = {
+        "email": [
+          "Enter a valid email address."
+        ]
+      }
+
       $.ajax({
         type: "POST",
         url: "https://e30e-165-49-68-175.ngrok-free.app/api/contact/",
         data: JSON.stringify(contact_json),
         contentType: "application/json",
         success: function(msg) {
-          alert(msg);
-          // Message was sent
-          if (msg.message == "OK") {
+
+          var message = JSON.stringify(msg);
+
+          if (!msg.email == "Enter a valid email address.") {
             $("#image-loader").fadeOut();
             $("#message-warning").hide();
             $("#contactForm").fadeOut();
@@ -117,7 +127,7 @@ jQuery(document).ready(function($) {
           // There was an error
           else {
             $("#image-loader").fadeOut();
-            $("#message-warning").html(msg);
+            $("#message-warning").html(msg.email);
             $("#message-warning").fadeIn();
           }
         }
