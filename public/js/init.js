@@ -79,6 +79,7 @@ jQuery(document).ready(function($) {
 
       var contactName = $("#contactForm #contactName").val();
       var contactEmail = $("#contactForm #contactEmail").val();
+      var contactNumber = $("#contactForm #contactNumber").val();
       var contactSubject = $("#contactForm #contactSubject").val();
       var contactMessage = $("#contactForm #contactMessage").val();
 
@@ -92,11 +93,20 @@ jQuery(document).ready(function($) {
         "&contactMessage=" +
         contactMessage;
 
+      var contact_json = {
+        "name":contactName,
+        "email":contactEmail,
+        "phone_number":contactNumber,
+        "message": "Subject " + contactSubject + " Message" + contactMessage,
+      }
+
       $.ajax({
         type: "POST",
-        url: "/api",
-        data: data,
+        url: "https://e30e-165-49-68-175.ngrok-free.app/api/contact",
+        data: JSON.stringify(contact_json),
+        contentType: "application/json",
         success: function(msg) {
+          alert(msg);
           // Message was sent
           if (msg.message == "OK") {
             $("#image-loader").fadeOut();

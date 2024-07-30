@@ -5,7 +5,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Posts from "./Components/Post/Posts";
-// import Contact from "./Components/Contact";
+import Contact from "./Components/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -45,7 +45,7 @@ class App extends Component {
         <div className="flex flex-col min-h-screen">
           <Posts />
         </div>
-        {/* <Contact data={this.state.resumeData.main} /> */}
+        <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
       </div>
     );

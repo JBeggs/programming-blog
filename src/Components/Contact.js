@@ -33,7 +33,7 @@ class Contact extends Component {
         </Fade>
 
         <div className="row">
-          <Slide left duration={1000}>
+          {/* <Slide left duration={1000}> */}
             <div className="eight columns">
               <form action="" method="post" id="contactForm" name="contactForm">
                 <fieldset>
@@ -63,8 +63,8 @@ class Contact extends Component {
                       name="contactEmail"
                       onChange={this.handleChange}
                     />
-                     <br />
-                    {/* <span
+                     {/*<br />
+                     <span
                       style={{
                         fontWeight: "bold",
                         color: "red"
@@ -73,7 +73,18 @@ class Contact extends Component {
                       {emailMessage}
                     </span> */}
                   </div>
-
+                  <div>
+                    <label htmlFor="contactNumber">
+                      Phone Number <span className="required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      defaultValue=""
+                      size="35"
+                      id="contactNumber"
+                      name="contactNumber"
+                    />
+                  </div>
                   <div>
                     <label htmlFor="contactSubject">Subject</label>
                     <input
@@ -113,9 +124,9 @@ class Contact extends Component {
                 <br />
               </div>
             </div>
-          </Slide>
+          {/* </Slide> */}
 
-          <Slide right duration={1000}>
+          {/* <Slide right duration={1000}> */}
             <aside className="four columns footer-widgets">
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>
@@ -158,7 +169,7 @@ class Contact extends Component {
                 </ul>
               </div> */}
             </aside>
-          </Slide>
+          {/* </Slide> */}
         </div>
       </section>
     );
