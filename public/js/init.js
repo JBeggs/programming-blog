@@ -130,8 +130,9 @@ jQuery(document).ready(function($) {
               phone_number_valid = false
             }
           }
-
+          
           if (email_valid && name_valid && email_valid) {
+            console.log("Valid");
             $("#image-loader").fadeOut();
             $("#message-warning").hide();
             $("#contactForm").fadeOut();
@@ -139,7 +140,9 @@ jQuery(document).ready(function($) {
           }
           // There was an error
           else {
+            console.log(error_message);
             $("#image-loader").fadeOut();
+            $("#message-warning").show();
             $("#message-warning").html(error_message);
             $("#message-warning").fadeIn();
           }
