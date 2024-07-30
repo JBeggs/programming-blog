@@ -1,0 +1,16 @@
+.search-input {
+    width:15%;
+    border: 5px solid #95bf47;
+    border-radius: 5px;
+}
+
+.search{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    box-shadow: 2px 3px 28px 1px rgba(0,0,0,0.1);
+    border: 0px solid transparent;
+    border-radius: 5px;
+    height: 68px;
+    font-size: 30px;
+}

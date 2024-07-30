@@ -1,0 +1,183 @@
+{
+  "main": {
+    "name":"Python Open Source Solutions",
+    "description":"I am a software developer using Open Soiurce software. Mainly develop using Python (Django) and React (This site is built oin React).",
+    "image":"profilepic.jpg",
+    "bio":"I've been in the corporate environment for the last 10 years and looking to start sharing the knowledge I've accuumilated over the years.",
+    "contactmessage":"Thank you for contact Python Solutions",
+    "email": "django.python.pro@gmail.com@gmail.com",
+    "phone": "072-523-5515",
+    "github":"https://github.com/JBeggs/programming-blog",
+    "project":"https://github.com/JBeggs/programming-blog",
+    "address":{
+      "street":"Farm 237 Broederstroom.",
+      "city":"Entrance T-junction R512 & R104 Crocodile Rd.",
+      "state":"Hartbeespoort North West.",
+      "zip": "0246"
+    },
+    "website": "",
+    "resumedownload":"",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/profile.php?id=100070287436360",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/company/python-opensource-solutions/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/JBeggs",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "education":[
+      {
+        "school":"Self Taught",
+        "degree":"The greatest thing I'm learned is how to teach myself. The internet has all the answer, if you can structure the question and be specific.",
+        "graduated":"April 2010",
+        "description":"Started with PHP but speadily moved onto Python. That was 10 years ago and now front end is changing too, have you heard of React?"
+      }
+    ],
+    "work":[
+      {
+        "company":"Python Programmer at Cullinan Holdings Limited",
+        "title":"Python / Django Developer ",
+        "years":"November 2020 - April 2023",
+        "description":"Django Python Developer <br /><br />1. Monitored and maintained operational readiness of middleware applications.<br />2. Worked independently to design, develop, and test code.<br />3. Designed web-based assets for deployment on cloud computing platforms.<br />4. Stayed current on developments in related Python frameworks.<br />5. Translated business requirements into logical and physical file structure designs.<br />6. Developed Django Python for a small development team, focused on the tourist industry.<br />Streamlined error reporting using Loggly (Solar Winds) to alert when Django throws an error.<br /><br />And integrated the OTP process into the login process using a custom backend.<br />Using Django Tenants to develop software<br />Django-tenants<br /><br />This made the development a Software as a Service product."
+      },
+      {
+        "company":"Python Backend Developer at 4-Sure",
+        "title":"Python Backend Developer at 4-Sure",
+        "years":"April 2019 - March 2020",
+        "description":"Pycharm<br /><br />First time I was forced to intimately grasp Pycharm and loved it. From setting up the virtual environment to running tests against the code-base and database. Still used the command line for Git but ended up creating tests to run against any client instance.<br />Fault Finding and bug fixing<br />Logging the functionality of a Class, Function or endpoint has become my top priority for one reason: the logged information can be used to create tests for that particular code. That means not only is it easier to create the test i.e. not faked and valid from the frontend, but once the test is using the logged data, you essentially start testing the developers use the correct data and receive valid errors or returned data. This also means when the code is worked on in the master, the tests created from logging can double-check that the functionality is still working.<br /><br />Finally automation. We can use the tests to automate testing before the code is released live. This starts to ensure that, as a bug stomper, I don't chase bugs introduced by front-end software testers entering in random information and correct data structure is enforced.<br /><br />PyTest<br /><br />I found out the hard way that testing helps. Before adjusting a single letter of code, write a basic test to hit the endpoint/function and check the returned data. If needed inject test data. Can be tricky if you need to save or test against a database. Use Pycharm to manage the different tests.<br /><br />Can integrate TOX if the environment allows.<br /><br />BUGS<br /><br />Every minor bug came through me. Replicating the error was task one. Which was a test and then fixing it was easier. Trawling error logs to find clues and context was key.<br /><br />First the client, the environment, Development, Staging or LIVE, and a claim number. All major traffic was focused on two main endpoints or Classes. Create and Update. Create being the easier, I created that one from code setup for me. Client aware i.e. used specific code for individual clients stored on the code.<br /><br />Clients included Multichoice, Builders, and the insurance industry.<br /><br />Managed through Jira (Attlassin) and linked to GitHub.<br /><br />Django rest API<br /><br />I was tasked with the creation of endpoints and functionality. Usually, I am given a JSON data packet then depending on what's needed either save/update the database, request external API, or code alternative functionality.<br /><br />Django Authentication<br /><br />Integrated OTP Authentication into the custom backend.<br /><br />GIT<br /><br />Branching of development and committing to the development branch for each customer. Never touching master. There were up to 8 clients linked through Atlassian.<br />Team<br />I've always worked in conjunction with other developers, allowing me to focus on the backend. I understand frontend, I need to, but my talent lies in the backend.<br />The only time you see my work is in the Documentation. The rest is endpoints and backend functionality hidden from view. Or when something not working.<br />"
+      },
+      {
+        "company":"Tangent Solutions",
+        "title":"Junior Consultant",
+        "years":"March 2018 - February 2019",
+        "description":"PHP (Laravel)<br /><br />Introduction Docker and Kubernetics. Could build basic images and run images. I see the potential but lack the ambition to dive deeper.<br /><br />Contracted out to VumaTel for development on their backend. At VumaTel we developed using Django and Ansible to automate deployment.<br /><br />"
+      }
+    ],
+    "skills":[
+      {
+        "name":"Linux based OS",
+        "level":"90%"
+      },
+      {
+        "name":"Docker with Docker Compose",
+        "level":"80%"
+      },
+      {
+        "name":"Pycharm Python IDE",
+        "level":"90%"
+      },
+      {
+        "name":"VScode React and Python IDE",
+        "level":"90%"
+      },
+      {
+        "name":"Python",
+        "level":"90%"
+      },
+      {
+        "name":"Selenium web crawler",
+        "level":"90%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"50%"
+      },
+      {
+        "name":"CSS",
+        "level":"90%"
+      },
+      {
+        "name":"PHP",
+        "level":"50%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Canadian Wanderlust",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"01.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      },
+      {
+        "title":"Fury Fighting Gear",
+        "category":"(offline now) A fighting gear company I started",
+        "image":"02.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Original Thai Food",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"03.jpg",
+        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title":"Resume Website",
+        "category":"A React based resume website template",
+        "image":"04.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"05.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Canadian Wanderlust",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"06.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      },
+      {
+        "title":"Fury Fighting Gear",
+        "category":"(offline now) A fighting gear company I started",
+        "image":"01.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Original Thai Food",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"02.jpg",
+        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title":"Original Thai Food",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"03.jpg",
+        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title":"Resume Website",
+        "category":"A React based resume website template",
+        "image":"04.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"05.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Canadian Wanderlust",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"06.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      }
+    ]
+  }
+}
