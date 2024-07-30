@@ -110,7 +110,7 @@ class Contact extends Component {
                   <div>
                     <button className="submit">Submit</button>
                     <span id="image-loader">
-                      <img alt="" src="images/loader.gif" style={{width:"50px", height:"50px"}}/>
+                      <img alt="" src="images/loader.gif" id="loader" />
                     </span>
                   </div>
                 </fieldset>

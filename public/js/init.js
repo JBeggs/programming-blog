@@ -105,8 +105,7 @@ jQuery(document).ready(function($) {
         url: "https://e30e-165-49-68-175.ngrok-free.app/api/contact/",
         data: JSON.stringify(contact_json),
         contentType: "application/json",
-        success: function(msg) {
-
+        error: function(msg) {
           var error_message = "Name, Email and Phone_number cannot be blank and please make sure the email is valid"
 
           var email_valid = true;
@@ -130,17 +129,17 @@ jQuery(document).ready(function($) {
               phone_number_valid = false
             }
           }
+          $("#image-loader").fadeOut();
+          $("#message-warning").html(error_message);
+          $("#message-warning").fadeIn();
+        },
+        success: function(msg) {
 
-          if (email_valid && name_valid && email_valid) {
-            $("#image-loader").fadeOut();
-            $("#message-warning").hide();
-            $("#contactForm").fadeOut();
-            $("#message-success").fadeIn();
-          } else {
-            $("#image-loader").fadeOut();
-            $("#message-warning").html(error_message);
-            $("#message-warning").fadeIn();
-          }
+          $("#image-loader").fadeOut();
+          $("#message-warning").hide();
+          $("#contactForm").fadeOut();
+          $("#message-success").fadeIn();
+
         }
       });
       return false;
